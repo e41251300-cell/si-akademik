@@ -9,7 +9,9 @@
 <body class="bg-light">
 <nav class="navbar navbar-dark bg-primary mb-4">
     <div class="container">
-        <a class="navbar-brand" href="<?= url('mahasiswa') ?>">Sistem Informasi Akademik</a>
+
+        <a class="navbar-brand" href="<?= url('mahasiswa') ?>">Sistem Informasi Akademik Polije</a>
+
         <?php if (!empty($_SESSION['user'])): ?>
             <form method="post" action="<?= url('auth/logout') ?>" class="m-0">
                 <button class="btn btn-sm btn-light">Logout (<?= e($_SESSION['user']) ?>)</button>
