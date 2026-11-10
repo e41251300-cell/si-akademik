@@ -20,5 +20,6 @@
     </div>
 </nav>
 <div class="container"><?= $content ?></div>
+<footer class="text-center text-muted my-4">&copy; 2026 Niha Natus Sholikhah - E41251300</footer>
 </body>
 </html>
