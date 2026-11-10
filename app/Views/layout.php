@@ -8,7 +8,14 @@
 </head>
 <body class="bg-light">
 <nav class="navbar navbar-dark bg-primary mb-4">
-    <div class="container"><a class="navbar-brand" href="<?= url('mahasiswa') ?>">SI Akademik</a></div>
+    <div class="container">
+        <a class="navbar-brand" href="<?= url('mahasiswa') ?>">SI Akademik</a>
+        <?php if (!empty($_SESSION['user'])): ?>
+            <form method="post" action="<?= url('auth/logout') ?>" class="m-0">
+                <button class="btn btn-sm btn-light">Logout (<?= e($_SESSION['user']) ?>)</button>
+            </form>
+        <?php endif; ?>
+    </div>
 </nav>
 <div class="container"><?= $content ?></div>
 </body>
